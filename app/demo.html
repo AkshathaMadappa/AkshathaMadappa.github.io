@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Event Registrations</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/css/app.css" rel="stylesheet"/>
+
+    </head>
+    <body ng-cloak>
+        <div class="container">
+            <div ng-controller="DemoController" style="padding-left:20px;padding-right:20px;">
+                <img ng-src="{{imageUrl}}" alt="{{altTag}}"/>
+                
+                <hr/>
+
+                <div class="container">
+                    <div class="row">
+                        <form>
+                            <input type="text" class="questionInput" ng-model="new_ques" placeholder="type question here"/>
+                            <button class="btn btn-post" ng-click="postQuestion()" style="margin-top : -8px" type="submit">post</button>
+                        </form>
+                    </div>
+                </div>
+
+                    <ul class="thumbnails">
+                        <li ng-repeat="question in questions">
+                            <div class="row question">
+                                <div class="well span11">
+                                    <h4 class="well-title">{{question.qname}}</h4><br/>
+                                        <ul class="thumbnails">
+                                            <li ng-repeat="answer in answers | orderBy:sortorder">
+                                                <div ng-if="question.id==answer.id">
+                                                    <div class="row answer">
+                                                            <div class="span0 well votingWidget">
+                                                                    <div class="votingButton" ng-click="upVoteAnswer(answer)">
+                                                                        <i class="icon-chevron-up icon-white"></i>
+                                                                    </div>
+                                                                    <div class="badge badge-inverse">
+                                                                        <div>{{answer.upvote}}</div>
+                                                                    </div>
+                                                                    <div class="votingButton" ng-click="downVoteAnswer(answer)">
+                                                                        <i class="icon-chevron-down"></i>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="well span8">
+                                                                <h4 class="well-title">{{answer.ans}}</h4><br/>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                             
+                                            <!-- <div class="new_answer_holder">
+                                                <form ng-submit="postAnswer(new_ans)" >
+                                                    <div class="post_answer">
+                                                        <input class="answerInput"  type="text" ng-model="new_ans"/>
+                                                        <button type="submit" style="margin-top : -8px" id="postanswer" class="btn btn-submit">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </div>  -->
+
+                                                                    
+                                            <div class="container">
+                                                <div class="row">
+                                                    <form>
+                                                        <input type="text" ng-model="new_ans" class="answerInput" placeholder="type your answer here"/>
+                                                        <button type="submit"   ng-click="postNewAnswer(question.id,new_ans)" style="margin-top : -8px" id="postanswer" class="btn btn-submit">Submit</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        
+        <script src="/lib/jquery.min.js"></script>
+        <script src="/lib/underscore-1.4.4.min.js"></script>
+        <script src="/lib/bootstrap.min.js"></script>
+        <script src="/lib/angular/angular.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/controllers/demoController.js"></script>
+        <!-- <script src="/js/services/EventData.js"></script> -->
+        <!-- <script src="/scripts/eventsController.js"></script> -->
+    </body>
+</html>

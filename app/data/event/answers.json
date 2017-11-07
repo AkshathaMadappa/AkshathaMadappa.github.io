@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "ans": "HTML refers to Hyper Text Markup Language",
+    "upvote": 20
+  },
+  {
+    "id": 2,
+    "ans": "It is  a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.",
+    "upvote": 8
+  },
+  {
+    "id": 3,
+    "ans": "AngularJS is a structural framework for dynamic web apps.",
+    "upvote": 101
+  },
+  {
+    "id": 1,
+    "ans": "Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.",
+    "upvote": 20
+  },
+  {
+    "id": 2,
+    "ans": "CSS refers to Cascading Style Sheets",
+    "upvote": 20
+  }
+]

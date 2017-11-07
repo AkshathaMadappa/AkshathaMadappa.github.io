@@ -1,0 +1,204 @@
+{
+  "data": {
+    "data": {
+      "data": {
+        "data": {
+          "data": {
+            "data": {
+              "data": {
+                "data": {
+                  "data": {
+                    "data": {
+                      "data": [
+                        {
+                          "id": 1,
+                          "ans": "HTML refers to Hyper Text Markup Language",
+                          "upvote": 10
+                        },
+                        {
+                          "id": 2,
+                          "ans": "It is  a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.",
+                          "upvote": 5
+                        },
+                        {
+                          "id": 3,
+                          "ans": "AngularJS is a structural framework for dynamic web apps.",
+                          "upvote": 101
+                        }
+                      ],
+                      "status": 200,
+                      "config": {
+                        "method": "GET",
+                        "transformRequest": [
+                          null
+                        ],
+                        "transformResponse": [
+                          null
+                        ],
+                        "url": "/api/ping/answers",
+                        "headers": {
+                          "Accept": "application/json, text/plain, */*"
+                        }
+                      },
+                      "statusText": "OK"
+                    },
+                    "status": 200,
+                    "config": {
+                      "method": "GET",
+                      "transformRequest": [
+                        null
+                      ],
+                      "transformResponse": [
+                        null
+                      ],
+                      "url": "/api/ping/answer",
+                      "headers": {
+                        "Accept": "application/json, text/plain, */*"
+                      }
+                    },
+                    "statusText": "OK"
+                  },
+                  "status": 200,
+                  "config": {
+                    "method": "GET",
+                    "transformRequest": [
+                      null
+                    ],
+                    "transformResponse": [
+                      null
+                    ],
+                    "url": "/api/ping/answer",
+                    "headers": {
+                      "Accept": "application/json, text/plain, */*"
+                    }
+                  },
+                  "statusText": "OK"
+                },
+                "status": 200,
+                "config": {
+                  "method": "GET",
+                  "transformRequest": [
+                    null
+                  ],
+                  "transformResponse": [
+                    null
+                  ],
+                  "url": "/api/ping/answer",
+                  "headers": {
+                    "Accept": "application/json, text/plain, */*"
+                  }
+                },
+                "statusText": "OK"
+              },
+              "status": 200,
+              "config": {
+                "method": "GET",
+                "transformRequest": [
+                  null
+                ],
+                "transformResponse": [
+                  null
+                ],
+                "url": "/api/ping/answer",
+                "headers": {
+                  "Accept": "application/json, text/plain, */*"
+                }
+              },
+              "statusText": "OK"
+            },
+            "status": 200,
+            "config": {
+              "method": "GET",
+              "transformRequest": [
+                null
+              ],
+              "transformResponse": [
+                null
+              ],
+              "url": "/api/ping/answer",
+              "headers": {
+                "Accept": "application/json, text/plain, */*"
+              }
+            },
+            "statusText": "OK"
+          },
+          "status": 200,
+          "config": {
+            "method": "GET",
+            "transformRequest": [
+              null
+            ],
+            "transformResponse": [
+              null
+            ],
+            "url": "/api/ping/answer",
+            "headers": {
+              "Accept": "application/json, text/plain, */*"
+            }
+          },
+          "statusText": "OK"
+        },
+        "status": 200,
+        "config": {
+          "method": "GET",
+          "transformRequest": [
+            null
+          ],
+          "transformResponse": [
+            null
+          ],
+          "url": "/api/ping/answer",
+          "headers": {
+            "Accept": "application/json, text/plain, */*"
+          }
+        },
+        "statusText": "OK"
+      },
+      "status": 200,
+      "config": {
+        "method": "GET",
+        "transformRequest": [
+          null
+        ],
+        "transformResponse": [
+          null
+        ],
+        "url": "/api/ping/answer",
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        }
+      },
+      "statusText": "OK"
+    },
+    "status": 200,
+    "config": {
+      "method": "GET",
+      "transformRequest": [
+        null
+      ],
+      "transformResponse": [
+        null
+      ],
+      "url": "/api/ping/answer",
+      "headers": {
+        "Accept": "application/json, text/plain, */*"
+      }
+    },
+    "statusText": "OK"
+  },
+  "status": 200,
+  "config": {
+    "method": "GET",
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "url": "/api/ping/answer",
+    "headers": {
+      "Accept": "application/json, text/plain, */*"
+    }
+  },
+  "statusText": "OK"
+}

@@ -1,0 +1,46 @@
+{
+    "questions": [
+        {
+            "id" : 1,
+            "qname": "What is HTML",
+            "answers": [
+                {
+                    "ans": "HTML refers to Hyper Text Markup Language",
+                    "upvote": 10
+                },
+                {
+                    "ans": "It is  a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.",
+                    "upvote": 5
+                }
+            ]
+        },
+        {
+            "id" : 2,
+            "qname": "What is CSS",
+            "answers": [
+                {
+                    "ans": "CSS refers to Cascading Style Sheet",
+                    "upvote": 20
+                },
+                {
+                    "ans": "CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.",
+                    "upvote": 15
+                }
+            ]
+        },
+        {
+            "id" : 3,
+            "qname": "What is AngularJS",
+            "answers": [
+            {
+                "ans": "AngularJS is a structural framework for dynamic web apps.",
+                "upvote": 100
+            },
+            {
+                "ans": "It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly.",
+                "upvote": 50
+            }
+        ]
+    }
+    ]
+}

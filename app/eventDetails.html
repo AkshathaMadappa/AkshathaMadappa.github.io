@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Event Registrations</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/css/app.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <div ng-controller="EventController as e" style="padding-left:20px;padding-right:20px;">
+                <img ng-src="{{imageUrl}}" alt="{{name}}"/>
+                <!-- <div class="row">
+                    <div class="spann11">
+                          <strong> {{event.name}}</strong> 
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="span4">
+                                {{event.location.houseName}}<br/>
+                                {{event.location.houseNo}}
+                        </div>
+                </div> -->
+
+                <hr/>
+
+                    <ul class="thumbnails">
+                        <li ng-repeat="question in event.questions">
+                            <div class="row question">
+                                <div class="well span11">
+                                    <h4 class="well-title">{{question.qname}}</h4><br/>
+                                        <ul class="thumbnails">
+                                            <li ng-repeat="answer in question.answers | orderBy:sortorder">
+                                                    <div class="row answer">
+                                                            <div class="span0 well votingWidget">
+                                                                    <div class="votingButton" ng-click="upVoteAnswer(answer)">
+                                                                        <i class="icon-chevron-up icon-white"></i>
+                                                                    </div>
+                                                                    <div class="badge badge-inverse">
+                                                                        <div>{{answer.upvote}}</div>
+                                                                    </div>
+                                                                    <div class="votingButton" ng-click="downVoteAnswer(answer)">
+                                                                        <i class="icon-chevron-down"></i>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="well span8">
+                                                                <h4 class="well-title">{{answer.ans}}</h4><br/>
+                                                            </div>
+                                                    </div>
+                                            </li>
+                                             
+
+                                            <div class="new_answer_holder">
+                                                <form novalidate ng-submit="events">
+                                                    <div class="post_answer">
+                                                        <input class="answerInput" type="text" ng-model="e.Object.ans" placeholder="type your answer here"/>
+                                                        <input type="submit" id="postanswer" class="btn btn-primary" value="Submit" />
+                                                    </div>
+                                                </form>
+                                            </div> 
+                                        </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        
+        <script src="/lib/jquery.min.cs"></script>
+        <script src="/lib/underscore-1.4.4.min.cs"></script>
+        <script src="/lib/bootstrap.min.cs"></script>
+        <script src="/lib/angular/angular.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/controllers/EventController.js"></script>
+        <script src="/js/services/EventData.js"></script>
+        <!-- <script src="/scripts/eventsController.js"></script> -->
+    </body>
+</html>

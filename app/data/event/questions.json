@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "qname": "What is HTML"
+  },
+  {
+    "id": 2,
+    "qname": "What is CSS"
+  },
+  {
+    "id": 3,
+    "qname": "What is AngularJS"
+  },
+  {
+    "id": 4,
+    "qname": "What is Node JS"
+  },
+  {
+    "id": 5,
+    "qname": "What is JavaScript"
+  },
+  {
+    "id": 6,
+    "qname": "What is your name"
+  },
+  {
+    "id": 7,
+    "qname": "What is HHHH"
+  },
+  {
+    "id": 8,
+    "qname": "NEW QUESTION"
+  },
+  {
+    "id": 9,
+    "qname": "Who is KArthik"
+  }
+]
