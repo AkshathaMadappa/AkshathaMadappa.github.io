@@ -1,12 +1,12 @@
 // 'use strict';
 
-eventsApp.controller('DemoController', function ($scope, $http, getQAService) {
+eventsApp.controller('DemoController', function ($scope, $http) {
     var new_max;
 
     //Read questions from file
 
     $scope.getQuestions = function () {
-        $http.get('/api/ping/questions').success(function (data) {
+        $http.get('https://akshathamadappa.github.io/app/data/event/questions.json').success(function (data) {
             console.log("Success");
             $scope.questions = data;
         }, function () {
@@ -16,7 +16,7 @@ eventsApp.controller('DemoController', function ($scope, $http, getQAService) {
 
     //Read answers from file
 
-    $http.get('/api/ping/answers').success(function (data) {
+    $http.get('https://akshathamadappa.github.io/app/data/event/answers.json').success(function (data) {
         console.log("Success");
         $scope.answers = data;
         console.log(data);
@@ -54,7 +54,7 @@ eventsApp.controller('DemoController', function ($scope, $http, getQAService) {
         }
         alert("Submitted your question successfully");
 
-        $http.get('/api/ping/questions').success(function (data) {
+        $http.get('https://akshathamadappa.github.io/app/data/event/questions.json').success(function (data) {
             console.log("Success QP");
             console.log(data);
             $scope.questions = data;
@@ -80,7 +80,7 @@ eventsApp.controller('DemoController', function ($scope, $http, getQAService) {
         }
         alert("Submitted your answer successfully");
 
-        $http.get('/api/ping/answers').success(function (data) {
+        $http.get('https://akshathamadappa.github.io/app/data/event/answers.json').success(function (data) {
             console.log("Success AP");
             console.log(data);
             $scope.answers = data;
@@ -106,7 +106,7 @@ eventsApp.controller('DemoController', function ($scope, $http, getQAService) {
     $scope.upVoteAnswer = function (session) {
 
         session.upvote++;
-        $http.get('/api/ping/answers').success(function (data) {
+        $http.get('https://akshathamadappa.github.io/app/data/event/answers.json').success(function (data) {
             console.log(data);
             $scope.answer = data;
             $scope.updatedAnswer = {
@@ -140,7 +140,7 @@ eventsApp.controller('DemoController', function ($scope, $http, getQAService) {
 
     $scope.downVoteAnswer = function (session) {
         session.upvote--;
-        $http.get('/api/ping/answer').then(function (data) {
+        $http.get('https://akshathamadappa.github.io/app/data/event/answers.json').then(function (data) {
             console.log(data);
             $scope.answer = data;
             $scope.updatedAnswer = {
