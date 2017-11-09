@@ -98,7 +98,7 @@ eventsApp.controller('DemoController', function ($scope, $http) {
     };
 
     $scope.sortorder = '-upvote';
-    $scope.imageUrl = '/img/angularjs-logo.png';
+    $scope.imageUrl = 'https://akshathamadappa.github.io/app/img/angularjs-logo.png';
     $scope.altTag = 'nameOfTheImg';
 
     //Increment vote count of answer on upvote
